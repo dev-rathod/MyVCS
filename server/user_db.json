@@ -1,0 +1,10 @@
+{
+  "users": {
+    "devrathod": {
+      "public_key": "abcdef1234567890"
+    },
+    "alice": {
+      "public_key": "deadbeef12345678"
+    }
+  }
+}

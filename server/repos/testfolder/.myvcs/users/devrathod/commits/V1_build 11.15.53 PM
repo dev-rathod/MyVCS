@@ -1,0 +1,4 @@
+Hello world!
+rm *.o
+gcc main.c screen_painter.h screen_painter.c error_handler.h error_handler.c command_processor.c command_processor.h -c
+gcc command_processor.o error_handler.o screen_painter.o main.o -o main

@@ -1,0 +1,13 @@
+Author : Dev Rathod
+Email: dev-rathod@hotmail.com
+date: 31st July, 2025
+purpose: to handle the server side authentication and command request
+
+Code Stucture & File Usage:
+server/
+├── main.cpp                 -- Entry point
+├── server_api.cpp/.h        -- Dispatches request to handlers
+├── repo_manager.cpp/.h      -- Handles repo logic (init, commit, pull)
+├── auth_manager.cpp/.h      -- Verifies tokens
+├── user_db.json             -- Token-to-user database
+├── repos/                   -- Repo data saved here (username/repo/.myvcs)t

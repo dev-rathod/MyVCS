@@ -1,0 +1,55 @@
+server/
+├── main.cpp                 -- Entry point
+├── server_api.cpp/.h        -- Dispatches request to handlers
+├── repo_manager.cpp/.h      -- Handles repo logic (init, commit, pull)
+├── auth_manager.cpp/.h      -- Verifies tokens
+├── user_db.json             -- Token-to-user database
+├──repos/
+  └── <repo_name>/
+      ├── .myvcs/
+      │   ├── main/
+      │   ├── users/
+      │   │   ├── <username>/
+      │   │   │   ├── commits/
+      │   │   │   └── log.txt
+      │   └── config.json
+      └── workspace/client/ -- temp folder in which the user can push their files
+├── main.cpp
+├── network_client.cpp/.h
+├── client_config.json
+shared/
+├── json.hpp
+├── utils.cpp/.h (optional)
+
+
+
+g++ -std=c++20 server/main.cpp server/server_api.cpp server/auth_manager.cpp server/repo_manager.cpp -o server_app
+
+main.cpp \
+server_api.cpp \
+repo_manager.cpp \
+auth_manager.cpp \
+
+
+g++ -std=c++20 client/*.cpp client/commands/*.cpp -o myvcs
+
+/Users/devrathod/Documents/code/solution/main.c
+
+
+
+commit testfolder2 /Users/devrathod/Documents/Bigwig/Code/main.ino hi
+
+commit newpulltest /Users/devrathod/Documents/code/main.c hi
+
+commit a testfolder /Users/devrathod/Documents/code hi
+
+
+void PullReq::pullLatestCommand(const std::string& repoName, const std::string& folderPath, const std::string& filename) {
+
+
+Users/devrathod/Documents/Bigwig/VersionControl/server/repos/testfolder2/.myvcs/users/devrathod/commits/V1_main.c
+
+
+pull newpulltest main.c /Users/devrathod/Documents/code/test/
+
+/Users/devrathod/Documents/Bigwig/VersionControl/server/repos/newpulltest/.myvcs/users/devrathod/commits
