@@ -1,11 +1,14 @@
-# MyVCS
-A CLI-based version control system inspired by Git, enabling client-server communication over WebSockets within a local network, with server-side JSON storage for commits, branches, and repository state, and real-time updates sent to the client during pull operations.
+# MyVCS  
 
-Status: Not Production Ready
-Latest Version: 1.0.0
-Author: Dev Rathod
+A CLI-based version control system inspired by Git, enabling client-server communication over WebSockets within a local network, with server-side JSON storage for commits, branches, and repository state, and real-time updates sent to the client during pull operations.  
 
-Server Side Architecture:
+**Status:** Not Production Ready  
+**Latest Version:** 1.0.0  
+**Author:** Dev Rathod  
+
+---
+
+## Server Side Architecture  
 .
 ├── auth_manager.cpp
 ├── auth_manager.h
@@ -23,7 +26,11 @@ Server Side Architecture:
 └── user_db.json
 
 
-Client Side Architecture:
+
+---
+
+## Client Side Architecture  
+
 ├── auth.cpp
 ├── auth.h
 ├── client_config.json
