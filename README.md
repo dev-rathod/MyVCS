@@ -6,8 +6,11 @@ A CLI-based version control system inspired by Git, enabling client-server commu
 **Latest Version:** 1.0.0  
 **Author:** Dev Rathod  
 
----## 📂 Server Side Architecture  
+---
 
+## 📂 Server Side Architecture  
+
+```text
 .
 ├── auth_manager.cpp
 ├── auth_manager.h
@@ -18,20 +21,18 @@ A CLI-based version control system inspired by Git, enabling client-server commu
 ├── repo_manager.cpp
 ├── repo_manager.h
 ├── repos/
-│ └── testfolder/
-│ └── workspace/
+│   └── testfolder/
+│       └── workspace/
 ├── server_api.cpp
 ├── server_api.h
 └── user_db.json
-
-yaml
-Copy
-Edit
-
+```
 ---
 
 ## 📂 Client Side Architecture  
 
+
+```text
 .
 ├── auth.cpp
 ├── auth.h
@@ -45,6 +46,4 @@ Edit
 ├── myvcs
 ├── network_client.cpp
 └── network_client.h
-
-Copy
-Edit
+```
